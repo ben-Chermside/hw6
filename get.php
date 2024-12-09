@@ -6,7 +6,11 @@ $dbName         = "bchermsi";
 $user           = "bchermsi";
 $pw             = "50177BenC";
 
-print("started")
+
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+print("started");
 
 
 $ID = $_POST["ID"];
@@ -105,9 +109,6 @@ function PrintPage($body, $year) {
 }
 
 
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
 
 $conn = new PDO("mysql:host=$serverName;dbname=$dbName",
          $user = "bchermsi", $pw = "50177BenC");
