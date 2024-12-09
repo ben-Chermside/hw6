@@ -2,7 +2,7 @@
 <html>
 	<head></head>
 	<body>
-	<P>This is where you query and get elements from the database of profs</P>
+	<P>This is where you query and get elements from the movies database, all of these can be left balnk and the queery will ignore</P>
 	<form action="get.php" method="POST" class="vertCon">
         <div class='inputGroup'>
                 <div>
@@ -40,7 +40,7 @@
                 </div>
 		<div>
 		<span>Title</span>
-		<input type="checkbox" name="Titleget">
+		<input type="checkbox" name="Titleget" checked>
                 </div>
 		<div>
 			<span>medium</span>
@@ -103,6 +103,10 @@
 		<div>
 			<span>Modern</span>
 			<input type="checkbox" name="Modern">
+		</div>
+		<div>
+			<span>ALL</span>
+			<input type="checkbox" name="Modern" checked>
 		</div>
 
 		<div>
@@ -169,6 +173,10 @@
 			<input type="checkbox" name="Showa">
 		</div>
 		<div>
+			<span>ALL</span>
+			<input type="checkbox" name="allDinastys" checked>
+		</div>
+		<div>
 			<span class="formLabel">enter dinasty, comma seporated for multable</span>
 			<input type="text" name="dinastys">
 			</input>
@@ -201,7 +209,7 @@
 		</div>
 		<div>
 			<span>ALL</span>
-			<input type="checkbox" name="allAquisition">
+			<input type="checkbox" name="allAquisition" checked>
 		</div>
 
 	</div>
