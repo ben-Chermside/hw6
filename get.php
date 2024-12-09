@@ -113,7 +113,7 @@ else{
 	$stm = "FROM instructor WHERE 1=1";
 	for ($i=0; $i<count($infoGetsCheckboxes); $i++){
 		if($infoGetsCheckboxes[$i] === "on"){
-			$stm = 	getCorrospondingName[$i] . ", " . $stm;
+			$stm = 	$getCorrospondingName[$i] . ", " . $stm;
 		}
 	}
 	$stm = "SELECT " . $stm;
