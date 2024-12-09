@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+	<P>This is where you query and get elements from the database of profs</P>
+	<form action="get.php" method="POST" class="vertCon">
+        <div class='inputGroup'>
+                <div>
+                <span class="formLabel">only Get ID num, leave blank to get all IDs</span>
+                <input type="number" name="ID" id="popupYearsMenu" pattern="[0-9]+">
+                </input>
+                </div>
+                <div>
+
+                <div>
+                <span class="formLabel">only get name, leave blank or input ALL to get all names</span>
+                <input type="text" name="name" id="popupYearsMenu">
+                </input>
+                </div>
+		<span>only from</span>
+                <div>
+		<span>comp SCI</span>
+		<input type="checkbox" name="csci">
+                </div>
+		<div>
+		<span>finance</span>
+		<input type="checkbox" name="finance">
+                </div>
+		<div>
+		<span>music</span>
+		<input type="checkbox" name="music">
+                </div>
+		<div>
+		<span>physics</span>
+		<input type="checkbox" name="physics">
+                </div>
+		<div>
+		<span>history</span>
+		<input type="checkbox" name="history">
+                </div>
+		<div>
+		<span>biology</span>
+		<input type="checkbox" name="biology">
+                </div>
+		<div>
+		<span>elec eng</span>
+		<input type="checkbox" name="elecEng">
+		</div>
+		<div>
+		<span>from ALL</span>
+		<input type="checkbox" name="ALL">
+		</div>
+                <div>
+                <span class="formLabel">enter min salary(UDS)</span>
+		<input type="text" name="minSalary" id="popupYearsMenu">
+                </input>
+                </div>
+                <div>
+                <span class="formLabel">enter max salary(UDS)</span>
+		<input type="text" name="maxSalary" id="popupYearsMenu">
+                </input>
+                </div>
+        </div>
+
+        <div class='inputGroup'>
+                <input type='submit'></input>
+        </div>
+ 
+	</body>
+</html>
