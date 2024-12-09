@@ -9,6 +9,7 @@
 
 import pandas as pd
 import sqlalchemy
+import pymysql
 
 # Read the CSV file into a Pandas DataFrame
 df = pd.read_csv('Musium.csv')
