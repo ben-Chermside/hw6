@@ -32,8 +32,8 @@ $Description = $_POST["Description"];
 $ALLInfoGet = $_POST["ALL"];
 $artMedium = $_POST["artMedium"];
 
-// $infoGetsCheckboxes = array($IDget, $Accessionget, $TypeGet, , $Acquisitionget, $Artistget, $Titleget, $Object_Namegetget, $Techniquesget, $Dimensionsget, $Descriptionget, $Cultureget, $Dynastyget, $textget, $Description);
-// $getCorrospondingName = array("ObjectID","Accession_Number","Classification","Acquisition_Method","Artist_Maker","Title","Object_Name","Materials_Techniques","Dimensions","Description","Culture","Period_Dynasty","Department","eMuseum_Label_Text");
+//$infoGetsCheckboxes = array($IDget, $Accessionget, $TypeGet, , $Acquisitionget, $Artistget, $Titleget, $Object_Namegetget, $Techniquesget, $Dimensionsget, $Descriptionget, $Cultureget, $Dynastyget, $textget, $Description);
+$getCorrospondingName = array("ObjectID","Accession_Number","Classification","Acquisition_Method","Artist_Maker","Title","Object_Name","Materials_Techniques","Dimensions","Description","Culture","Period_Dynasty","Department","eMuseum_Label_Text");
 
 print("line 2");
 
