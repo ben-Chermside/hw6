@@ -105,12 +105,12 @@ $insSTMT =
 $queryResult = null;
 
 
-$stm = "FROM instructor WHERE 1=1";
+$stm = "FROM museum WHERE 1=1";
 if ($ALLInfoGet === "on"){
 	$stm = "SELECT * FROM instructor WHERE 1=1";
 }
 else{
-	$stm = "FROM instructor WHERE 1=1";
+	$stm = "FROM museum WHERE 1=1";
 	$first = 0;
 	for ($i=0; $i<count($infoGetsCheckboxes); $i++){
 		if($infoGetsCheckboxes[$i] === "on"){
