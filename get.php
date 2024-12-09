@@ -9,7 +9,7 @@ $pw             = "50177BenC";
 
 ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
-error_reporting(E_ALL);
+error_reporting(E_ALL ^ E_WARNING);
 print("started");
 
 
@@ -87,7 +87,7 @@ function PrintPage($body, $year) {
   print("<html>\n<head>\n<title>This is the movie handler!</title>\n");
   print("</head>\n<body>\n");
 
-  print("<h1>professors matching your Querry $year</h1>\n");
+  print("<h1>art matching your Querry $year</h1>\n");
 
   print("<div class='formOutput'>$body\n</div>\n");
 
@@ -213,8 +213,9 @@ $stmPre->execute($subArray);
  $body = "<table><tr><th>ID</th><th>Name</th><th>salary</th><th>department</th></tr>";
  foreach($stmPre->fetchAll(PDO::FETCH_ASSOC) as $key =>$val ) {
     $body .= "<tr><td>$key</td><td>" .
-                   $val['name'] .
-                   "</td><td>" . $val['salary'] . "</td><td>" . $val["dept_name"] ."</td></td>\n";
+                   $val['Title'] .
+                   //"</td><td>" . $val['salary'] . "</td><td>" . $val["dept_name"] .
+				   "</td></td>\n";
  }
 printPage($body, 1);
 
