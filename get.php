@@ -37,36 +37,37 @@ $getCorrospondingName = array("ObjectID","Accession_Number","Classification","Ac
 
 print("line 2");
 
-// $Asian = $_POST["Asian"];
-// $European = $_POST["European"];
-// $American = $_POST["American"];
-// $Indian = $_POST["Indian"];
-// $African = $_POST["African"];
-// $Modern = $_POST["Modern"];
-// $ALLDepartment = $_POST["ALLDepartment"];
-// $artest = $_POST["artest"];
-// $Title = $_POST["Title"];
-// $ObjectName = $_POST["Object Name"];
-// $year = $_POST["year"];
-// $Techniques = $_POST["Techniques"];
-// $CreditLine = $_POST["Credit Line"];
-// $keywords = $_POST["keywords"];
-// $Edo = $_POST["Edo"];
-// $Meiji = $_POST["Meiji"];
-// $Ming = $_POST["Ming"];
-// $Qing = $_POST["Qing"];
-// $Showa = $_POST["Showa"];
-// $allDinastys = $_POST["allDinastys"];
-// $dinastys = $_POST["dinastys"];
-// $Bequest = $_POST["Bequest"];
-// $found = $_POST["found"];
-// $Gift = $_POST["Gift"];
-// $Purchase = $_POST["Purchase"];
-// $Rental = $_POST["Rental"];
-// $otherAquisition = $_POST["otherAquisition"];
-// $allAquisition = $_POST["allAquisition"];
+$Asian = $_POST["Asian"];
+$European = $_POST["European"];
+$American = $_POST["American"];
+$Indian = $_POST["Indian"];
+$African = $_POST["African"];
+$Modern = $_POST["Modern"];
+$ALLDepartment = $_POST["ALLDepartment"];
+$artest = $_POST["artest"];
+$Title = $_POST["Title"];
+$ObjectName = $_POST["Object Name"];
+$year = $_POST["year"];
+$Techniques = $_POST["Techniques"];
+$CreditLine = $_POST["Credit Line"];
+$keywords = $_POST["keywords"];
+$Edo = $_POST["Edo"];
+$Meiji = $_POST["Meiji"];
+$Ming = $_POST["Ming"];
+$Qing = $_POST["Qing"];
+$Showa = $_POST["Showa"];
+$allDinastys = $_POST["allDinastys"];
+$dinastys = $_POST["dinastys"];
+$Bequest = $_POST["Bequest"];
+$found = $_POST["found"];
+$Gift = $_POST["Gift"];
+$Purchase = $_POST["Purchase"];
+$Rental = $_POST["Rental"];
+$otherAquisition = $_POST["otherAquisition"];
+$allAquisition = $_POST["allAquisition"];
 
 
+print("print 3");
 
 // // $csci = $_POST["csci"];
 // // $finance = $_POST["finance"];
