@@ -13,43 +13,43 @@ error_reporting(E_ALL);
 print("started");
 
 
-// $ID = $_POST["ID"];
-// $Accession = $_POST["Accession"];
-// $IDget = $_POST["IDget"];
-// $Accessionget = $_POST["Accessionget"];
-// $TypeGet = $_POST["TypeGet"];
-// $Acquisitionget = $_POST["Acquisitionget"];
-// $Artistget = $_POST["Artistget"];
-// $Titleget = $_POST["Titleget"];
-// $Object_Namegetget = $_POST["Object_Namegetget"];
-// $Techniquesget = $_POST["Techniquesget"];
-// $Dimensionsget = $_POST["Dimensionsget"];
-// $Descriptionget = $_POST["Descriptionget"];
-// $Cultureget = $_POST["Cultureget"];
-// $Dynastyget = $_POST["Dynastyget"];
-// $textget = $_POST["textget"];
-// $Description = $_POST["Description"];
-// $ALLInfoGet = $_POST["ALL"];
+$ID = $_POST["ID"];
+$Accession = $_POST["Accession"];
+$IDget = $_POST["IDget"];
+$Accessionget = $_POST["Accessionget"];
+$TypeGet = $_POST["TypeGet"];
+$Acquisitionget = $_POST["Acquisitionget"];
+$Artistget = $_POST["Artistget"];
+$Titleget = $_POST["Titleget"];
+$Object_Namegetget = $_POST["Object_Namegetget"];
+$Techniquesget = $_POST["Techniquesget"];
+$Dimensionsget = $_POST["Dimensionsget"];
+$Descriptionget = $_POST["Descriptionget"];
+$Cultureget = $_POST["Cultureget"];
+$Dynastyget = $_POST["Dynastyget"];
+$textget = $_POST["textget"];
+$Description = $_POST["Description"];
+$ALLInfoGet = $_POST["ALL"];
 
-// $infoGetsCheckboxes = array($IDget, $Accessionget, $TypeGet, , $Acquisitionget, $Artistget, $Titleget, $Object_Namegetget, $Techniquesget, $Dimensionsget, $Descriptionget, $Cultureget, $Dynastyget, $textget, $Description);
-// $getCorrospondingName = array(
-// "ObjectID",
-// "Accession_Number",
-// "Classification",
-// "Acquisition_Method",
-// "Artist_Maker",
-// "Title",
-// "Object_Name",
-// "Materials_Techniques",
-// "Dimensions",
-// "Description",
-// "Culture",
-// "Period_Dynasty",
-// "Department",
-// "eMuseum_Label_Text"
-// );
+$infoGetsCheckboxes = array($IDget, $Accessionget, $TypeGet, , $Acquisitionget, $Artistget, $Titleget, $Object_Namegetget, $Techniquesget, $Dimensionsget, $Descriptionget, $Cultureget, $Dynastyget, $textget, $Description);
+$getCorrospondingName = array(
+"ObjectID",
+"Accession_Number",
+"Classification",
+"Acquisition_Method",
+"Artist_Maker",
+"Title",
+"Object_Name",
+"Materials_Techniques",
+"Dimensions",
+"Description",
+"Culture",
+"Period_Dynasty",
+"Department",
+"eMuseum_Label_Text"
+);
 
-
+print("line 2");
 
 // $Asian = $_POST["Asian"];
 // $European = $_POST["European"];
