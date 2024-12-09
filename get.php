@@ -116,7 +116,7 @@ else{
 		if($infoGetsCheckboxes[$i] === "on"){
 			if($first === 0){
 				$stm = 	$getCorrospondingName[$i] . " " . $stm;
-				$first = 1
+				$first = 1;
 			}
 			else{
 				$stm = 	$getCorrospondingName[$i] . ", " . $stm;
