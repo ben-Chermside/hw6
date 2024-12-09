@@ -198,6 +198,7 @@ $subArray = array();
 
 $stm = $stm . ";";
 $stmPre = $conn->prepare($stm);
+print("stat is <P>$stm<P");
 $stmPre->execute($subArray);
  $body = "<table><tr><th>ID</th><th>Name</th><th>salary</th><th>department</th></tr>";
  foreach($stmPre->fetchAll(PDO::FETCH_ASSOC) as $key =>$val ) {
