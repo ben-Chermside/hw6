@@ -18,5 +18,5 @@ df = pd.read_csv('Musium.csv')
 engine = sqlalchemy.create_engine('mysql+pymysql://bchermsi:50177BenC@localhost:3306/bchermsi')
 
 # Write the DataFrame to the database
-df.to_sql('your_table_name', engine, index=False, if_exists='replace')
+df.to_sql('museum', engine, index=False, if_exists='replace')
 
