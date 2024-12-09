@@ -6,6 +6,9 @@ $dbName         = "bchermsi";
 $user           = "bchermsi";
 $pw             = "50177BenC";
 
+print("started")
+
+
 $ID = $_POST["ID"];
 $Accession = $_POST["Accession"];
 $IDget = $_POST["IDget"];
@@ -119,7 +122,7 @@ if ($ALLInfoGet === "on"){
 	$stm = "SELECT * FROM instructor WHERE 1=1";
 }
 else{
-	$stm = "FROM instructor WHERE 1=1"
+	$stm = "FROM instructor WHERE 1=1";
 	for ($i=0; $i<count($infoGetsCheckboxes); $i++){
 		if($infoGetsCheckboxes[$i] === "on"){
 			$stm = 	getCorrospondingName[$i] . ", " . $stm;
