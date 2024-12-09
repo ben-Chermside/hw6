@@ -5,216 +5,218 @@
 	<P>This is where you query and get elements from the movies database, all of these can be left balnk and the queery will ignore</P>
 	<form action="get.php" method="POST" class="vertCon">
         <div class='inputGroup'>
-                <div>
-                <span class="formLabel">only Get ID num, leave blank to get all IDs</span>
-                <input type="number" name="ID" id="popupYearsMenu" pattern="[0-9]+">
-                </input>
-                </div>
-                <div>
+			<div>
+			<span class="formLabel">only Get ID num, leave blank to get all IDs</span>
+			<input type="number" name="ID" id="popupYearsMenu" pattern="[0-9]+">
+			</input>
+			</div>
 
-                <div>
-                <span class="formLabel">only get Accession Number, leave blank or input ALL to get Accession Numbers</span>
-                <input type="text" name="Accession" id="popupYearsMenu">
-                </input>
-                </div>
-		<span>What information do you want to get?</span>
-                <div>
-		<span>ID</span>
-		<input type="checkbox" name="IDget">
-                </div>
-		<div>
-		<span>Accession</span>
-		<input type="checkbox" name="Accessionget">
-                </div>
-		<div>
-		<span>art Type</span>
-		<input type="checkbox" name="TypeGet">
-                </div>
-		<div>
-		<span>Acquisition</span>
-		<input type="checkbox" name="Acquisitionget">
-                </div>
-		<div>
-		<span>Artist</span>
-		<input type="checkbox" name="Artistget">
-                </div>
-		<div>
-		<span>Title</span>
-		<input type="checkbox" name="Titleget" checked>
-                </div>
-		<div>
-			<span>medium</span>
-			<input type="checkbox" name="Object_Namegetget">
-		</div>
-			<span>Techniques</span>
-			<input type="checkbox" name="Techniquesget">
-		</div>
-			<span>Dimensions</span>
-			<input type="checkbox" name="Dimensionsget">
-		</div>
-			<span>Description</span>
-			<input type="checkbox" name="Descriptionget">
-		</div>
-		<div>
-			<span>Culture</span>
-			<input type="checkbox" name="Cultureget">
-		</div>
-		<div>
-			<span>Dynasty</span>
-			<input type="checkbox" name="Dynastyget">
-		</div>
-		<div>
-			<span>text</span>
-			<input type="checkbox" name="textget">
-		</div>
-		<div>
-			<span>Description(warning long)</span>
-			<input type="checkbox" name="Description">
-		</div>
-		<div>
-			<span>ALL(warning long)</span>
-			<input type="checkbox" name="ALL">
-		</div>
-		<div>
-			<span class="formLabel">from a perticular department</span>
-		</div>
-		<div>
-			<span>Asian</span>
-			<input type="checkbox" name="Asian">
-		</div>
-		<div>
-			<span>European</span>
-			<input type="checkbox" name="European">
-		</div>
-		<div>
-			<span>American</span>
-			<input type="checkbox" name="American">
-		</div>
-		<div>
-			<span>American Indian</span>
-			<input type="checkbox" name="Indian">
-		</div>
-		<div>
-			<span>African</span>
-			<input type="checkbox" name="African">
-		</div>
-		<div>
-			<span>Modern</span>
-			<input type="checkbox" name="Modern">
-		</div>
-		<div>
-			<span>ALL</span>
-			<input type="checkbox" name="ALLDepartment" checked>
-		</div>
+			<div>
+			<span class="formLabel">only get Accession Number, leave blank or input ALL to get Accession Numbers</span>
+			<input type="text" name="Accession" id="popupYearsMenu">
+			</input>
+			</div>
+			<span>What information do you want to get?</span>
+					<div>
+			<span>ID</span>
+			<input type="checkbox" name="IDget">
+					</div>
+			<div>
+			<span>Accession</span>
+			<input type="checkbox" name="Accessionget">
+					</div>
+			<div>
+			<span>art Type</span>
+			<input type="checkbox" name="TypeGet">
+					</div>
+			<div>
+			<span>Acquisition</span>
+			<input type="checkbox" name="Acquisitionget">
+					</div>
+			<div>
+			<span>Artist</span>
+			<input type="checkbox" name="Artistget">
+					</div>
+			<div>
+			<span>Title</span>
+			<input type="checkbox" name="Titleget" checked>
+			</div>
+			<div>
+				<span>medium</span>
+				<input type="checkbox" name="Object_Namegetget">
+			</div>
+			<div>
+				<span>Techniques</span>
+				<input type="checkbox" name="Techniquesget">
+			</div>
+			<div>
+				<span>Dimensions</span>
+				<input type="checkbox" name="Dimensionsget">
+			</div>
+			<div>
+				<span>Description</span>
+				<input type="checkbox" name="Descriptionget">
+			</div>
+			<div>
+				<span>Culture</span>
+				<input type="checkbox" name="Cultureget">
+			</div>
+			<div>
+				<span>Dynasty</span>
+				<input type="checkbox" name="Dynastyget">
+			</div>
+			<div>
+				<span>text</span>
+				<input type="checkbox" name="textget">
+			</div>
+			<div>
+				<span>Description(warning long)</span>
+				<input type="checkbox" name="Description">
+			</div>
+			<div>
+				<span>ALL(warning long)</span>
+				<input type="checkbox" name="ALL">
+			</div>
+			<div>
+				<span class="formLabel">from a perticular department</span>
+			</div>
+			<div>
+				<span>Asian</span>
+				<input type="checkbox" name="Asian">
+			</div>
+			<div>
+				<span>European</span>
+				<input type="checkbox" name="European">
+			</div>
+			<div>
+				<span>American</span>
+				<input type="checkbox" name="American">
+			</div>
+			<div>
+				<span>American Indian</span>
+				<input type="checkbox" name="Indian">
+			</div>
+			<div>
+				<span>African</span>
+				<input type="checkbox" name="African">
+			</div>
+			<div>
+				<span>Modern</span>
+				<input type="checkbox" name="Modern">
+			</div>
+			<div>
+				<span>ALL</span>
+				<input type="checkbox" name="ALLDepartment" checked>
+			</div>
 
-		<div>
-			<span class="formLabel">artMedium(blank for all)</span>
-			<input type="text" name="artMedium" id="popupYearsMenu">
-			</input>
-		</div>
-		<div>
-			<span class="formLabel">artest(blank for all)</span>
-			<input type="text" name="artest" id="popupYearsMenu">
-			</input>
-		</div>
-		<div>
-			<span class="formLabel">name</span>
-			<input type="text" name="Title" id="popupYearsMenu">
-			</input>
-		</div>
-		<div>
-			<span class="formLabel">Object type</span>
-			<input type="text" name="Object Name" id="popupYearsMenu">
-			</input>
-		</div>
-		<div>
-			<span class="formLabel">year</span>
-			<input type="text" name="year" id="popupYearsMenu">
-			</input>
-		</div>
-		<div>
-			<span class="formLabel">art Techniques</span>
-			<input type="text" name="Techniques" id="Techniques">
-			</input>
-		</div>
-		<div>
-			<span class="formLabel">Credit Line</span>
-			<input type="text" name="Credit Line" id="Credit Line">
-			</input>
-		</div>
-		<div>
-			<span class="formLabel">enter keywords or phrases that might be related here, seportaed with a comma</span>
-			<input type="text" name="keywords">
-			</input>
-		</div>
-		<div>
-			<span>Here you can select chinees disasty's from the most common one or enter in names of any others in a comma seporated list</span>
-		</div>
-		<div>
-			<span>Edo</span>
-			<input type="checkbox" name="Edo">
-		</div>
-		<div>
-			<span>Meiji</span>
-			<input type="checkbox" name="Meiji">
-		</div>
-		<div>
-			<span>Ming</span>
-			<input type="checkbox" name="Ming">
-		</div>
-		<div>
-			<span>Qing</span>
-			<input type="checkbox" name="Qing">
-		</div>
-		<div>
-			<span>Showa Period</span>
-			<input type="checkbox" name="Showa">
-		</div>
-		<div>
-			<span>ALL</span>
-			<input type="checkbox" name="allDinastys" checked>
-		</div>
-		<div>
-			<span class="formLabel">enter dinasty, comma seporated for multable</span>
-			<input type="text" name="dinastys">
-			</input>
-		</div>
-		
+			<div>
+				<span class="formLabel">artMedium(blank for all)</span>
+				<input type="text" name="artMedium" id="popupYearsMenu">
+				</input>
+			</div>
+			<div>
+				<span class="formLabel">artest(blank for all)</span>
+				<input type="text" name="artest" id="popupYearsMenu">
+				</input>
+			</div>
+			<div>
+				<span class="formLabel">name</span>
+				<input type="text" name="Title" id="popupYearsMenu">
+				</input>
+			</div>
+			<div>
+				<span class="formLabel">Object type</span>
+				<input type="text" name="Object Name" id="popupYearsMenu">
+				</input>
+			</div>
+			<div>
+				<span class="formLabel">year</span>
+				<input type="text" name="year" id="popupYearsMenu">
+				</input>
+			</div>
+			<div>
+				<span class="formLabel">art Techniques</span>
+				<input type="text" name="Techniques" id="Techniques">
+				</input>
+			</div>
+			<div>
+				<span class="formLabel">Credit Line</span>
+				<input type="text" name="Credit Line" id="Credit Line">
+				</input>
+			</div>
+			<div>
+				<span class="formLabel">enter keywords or phrases that might be related here, seportaed with a comma</span>
+				<input type="text" name="keywords">
+				</input>
+			</div>
+			<div>
+				<span>Here you can select chinees disasty's from the most common one or enter in names of any others in a comma seporated list</span>
+			</div>
+			<div>
+				<span>Edo</span>
+				<input type="checkbox" name="Edo">
+			</div>
+			<div>
+				<span>Meiji</span>
+				<input type="checkbox" name="Meiji">
+			</div>
+			<div>
+				<span>Ming</span>
+				<input type="checkbox" name="Ming">
+			</div>
+			<div>
+				<span>Qing</span>
+				<input type="checkbox" name="Qing">
+			</div>
+			<div>
+				<span>Showa Period</span>
+				<input type="checkbox" name="Showa">
+			</div>
+			<div>
+				<span>ALL</span>
+				<input type="checkbox" name="allDinastys" checked>
+			</div>
+			<div>
+				<span class="formLabel">enter dinasty, comma seporated for multable</span>
+				<input type="text" name="dinastys">
+				</input>
+			</div>
+			
 
-		<div>
-			<span>Acquisition Methods, Bequest</span>
-			<input type="checkbox" name="Bequest">
-		</div>
-		<div>
-			<span>found</span>
-			<input type="checkbox" name="found">
-		</div>
-		<div>
-			<span>Gift</span>
-			<input type="checkbox" name="Gift">
-		</div>
-		<div>
-			<span>Purchase</span>
-			<input type="checkbox" name="Purchase">
-		</div>
-		<div>
-			<span>Rental</span>
-			<input type="checkbox" name="Rental">
-		</div>
-		<div>
-			<span>other(Purchase Party, unknown etc.)</span>
-			<input type="checkbox" name="otherAquisition">
-		</div>
-		<div>
-			<span>ALL</span>
-			<input type="checkbox" name="allAquisition" checked>
-		</div>
+			<div>
+				<span>Acquisition Methods, Bequest</span>
+				<input type="checkbox" name="Bequest">
+			</div>
+			<div>
+				<span>found</span>
+				<input type="checkbox" name="found">
+			</div>
+			<div>
+				<span>Gift</span>
+				<input type="checkbox" name="Gift">
+			</div>
+			<div>
+				<span>Purchase</span>
+				<input type="checkbox" name="Purchase">
+			</div>
+			<div>
+				<span>Rental</span>
+				<input type="checkbox" name="Rental">
+			</div>
+			<div>
+				<span>other(Purchase Party, unknown etc.)</span>
+				<input type="checkbox" name="otherAquisition">
+			</div>
+			<div>
+				<span>ALL</span>
+				<input type="checkbox" name="allAquisition" checked>
+			</div>
 
-	</div>
+		</div>
 
         <div class='inputGroup'>
                 <input type='submit'></input>
         </div>
- 
+	</form>
 	</body>
 </html>
