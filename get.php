@@ -111,9 +111,19 @@ if ($ALLInfoGet === "on"){
 }
 else{
 	$stm = "FROM instructor WHERE 1=1";
+	$first = 0;
 	for ($i=0; $i<count($infoGetsCheckboxes); $i++){
 		if($infoGetsCheckboxes[$i] === "on"){
-			$stm = 	$getCorrospondingName[$i] . ", " . $stm;
+			if($first === 0){
+				$stm = 	$getCorrospondingName[$i] . " " . $stm;
+				$first = 1
+			}
+			else{
+				$stm = 	$getCorrospondingName[$i] . ", " . $stm;
+
+			}
+
+			
 		}
 	}
 	$stm = "SELECT " . $stm;
