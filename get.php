@@ -145,7 +145,7 @@ $stmPre->execute($subArray);
 			//print("<P>entered loop</P>");
 			$toInsert = $val[$getCorrospondingName[$addTo]];
 			//prev($toInsert);
-			$body = $body . "<tr>$toInsert</tr>";
+			$body = $body . "<td>$toInsert</td>";
 		}
 	}
 	$body .= "</td>\n";
