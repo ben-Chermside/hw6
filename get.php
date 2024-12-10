@@ -212,10 +212,17 @@ print("stat is <P>$stm<P");
 $stmPre->execute($subArray);
  $body = "<table><tr><th>ID</th><th>Name</th><th>salary</th><th>department</th></tr>";
  foreach($stmPre->fetchAll(PDO::FETCH_ASSOC) as $key =>$val ) {
-    $body .= "<tr><td>$key</td><td>" .
-                   $val['Title'] .
-                   //"</td><td>" . $val['salary'] . "</td><td>" . $val["dept_name"] .
-				   "</td></td>\n";
+	$body .= "<tr><td>$key</td>";
+	for($addTo=0; $addTo<count($infoGetsCheckboxes); $addTo++){
+		$body .= "<tr>$val[$getCorrospondingName[$addTo]]</tr>";
+	}
+	$body .= "</td>\n";
+
+	
+    // $body .= "<tr><td>$key</td><td>" .
+    //                $val['Title'] .
+    //                //"</td><td>" . $val['salary'] . "</td><td>" . $val["dept_name"] .
+	// 			   "</td></td>\n";
  }
 printPage($body, 1);
 
