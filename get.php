@@ -142,7 +142,9 @@ $stmPre->execute($subArray);
 	$body .= "<tr><td>$key</td>";
 	for($addTo=0; $addTo<count($infoGetsCheckboxes); $addTo = $addTo + 1){
 		if(isset($infoGetsCheckboxes[$addTo])){
+			print("entered loop");
 			$toInsert = $val[$getCorrospondingName[$addTo]];
+			prev($toInsert);
 			$body .= "<tr>$toInsert</tr>";
 		}
 	}
