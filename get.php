@@ -214,7 +214,7 @@ if(!empty($numResults)){
 
 $stm = $stm . ";";
 $stmPre = $conn->prepare($stm);
-//print("stat is <P>$subArray</P>");
+print("stat is <P>$stm</P>");
 print_r($subArray);
 $stmPre->execute($subArray);
 $body = "<table><tr><th>ID</th>";
