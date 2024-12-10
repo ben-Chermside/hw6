@@ -151,7 +151,29 @@ if(!empty($artest)){
 	$subArray[":artest"] = "%" . $artest . "%";
 }
 
+if(empty($ALLDepartment)){
+	$stm = $stm . " AND (1=0";
+	if(!empty($Asian)){
+		$stm = $stm . " OR Department='Asian Art'";
+	}
+	if(!empty($European)){
+		$stm = $stm . " OR Department='European Art'";
+	}
+	if(!empty($American)){
+		$stm = $stm . " OR Department='American Art'";
+	}
+	if(!empty($Indian)){
+		$stm = $stm . " OR Department='Pre-Columbian and American Indian'";
+	}
+	if(!empty($African)){
+		$stm = $stm . " OR Department='African Art and Oceania'";
+	}
+	if(!empty($Modern)){
+		$stm = $stm . " OR Department='Modern and Contemporary Art'";
+	}
+	$stm = $stm . ")"
 
+}
 
 
 
