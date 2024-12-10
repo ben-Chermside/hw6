@@ -141,10 +141,35 @@ if(!empty($artest)){
 	$subArray[":artest"] = "%" . $artest . "%";
 }
 
+if(!empty($artMedium)){
+	$stm = $stm . " AND (Materials_Techniques LIKE :medium OR Classification LIKE :medium2)";
+	$subArray[":medium"] = "%" . $artMedium . "%";
+	$subArray[":medium2"] = "%" . $artMedium . "%";
+}
+
+if(!empty($ObjectName)){
+	$stm = $stm . " AND Classification LIKE :objectType";
+	$subArray[":objectType"] = "%" . $ObjectName . "%";
+}
+
+
+if(!empty($CreditLine)){
+	$stm = $stm . " AND Credit_Line LIKE :credit";
+	$subArray[":credit"] = "%" . $CreditLine . "%";
+}
+
+
 if(!empty($ID)){
 	$stm = $stm . " AND ObjectID=:ID";
 	$subArray[":ID"] =  $ID;
 }
+
+if(!empty($Accession)){
+	$stm = $stm . " AND Accession_Number=:accession";
+	$subArray[":accession"] =  $Accession;
+}
+
+
 
 if(!empty($name)){
 	$stm = $stm . " AND Artist_Maker LIKE :Pname";
@@ -153,9 +178,8 @@ if(!empty($name)){
 
 if(!empty($keywords)){
 	$keyWordList = explode(",", $keywords);
-	//for($keyWordNum = 0; $keyWordNum<sizeof($keyWordList); $keyWordNum++){
-		//$keywords = $keyWordList[$keyWordNum];
-		$keyWordNum = "0";
+	for($keyWordNum = 0; $keyWordNum<sizeof($keyWordList); $keyWordNum++){
+		$keywords = $keyWordList[$keyWordNum];
 		$stm = $stm . " AND (eMuseum_Label_Text LIKE :keyWord1$keyWordNum OR Period_Dynasty LIKE :keyWord2$keyWordNum OR Description LIKE :keyWord3$keyWordNum OR Materials_Techniques LIKE :keyWord4$keyWordNum OR Object_Name LIKE :keyWord5$keyWordNum OR Title LIKE :keyWord6$keyWordNum OR Culture LIKE :keyWord7$keyWordNum)";
 		$subArray[":keyWord1$keyWordNum"] = "%" . $keywords . "%";
 		$subArray[":keyWord2$keyWordNum"] = "%" . $keywords . "%";
@@ -164,7 +188,7 @@ if(!empty($keywords)){
 		$subArray[":keyWord5$keyWordNum"] = "%" . $keywords . "%";
 		$subArray[":keyWord6$keyWordNum"] = "%" . $keywords . "%";
 		$subArray[":keyWord7$keyWordNum"] = "%" . $keywords . "%";
-	//}
+	}
 }
 
 
