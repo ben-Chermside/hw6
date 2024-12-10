@@ -146,10 +146,25 @@ if(!empty($ID)){
 	$subArray[":ID"] =  $ID;
 }
 
-if(!empty($artest)){
-	$stm = $stm . " AND Artist_Maker LIKE :artest";
-	$subArray[":artest"] = "%" . $artest . "%";
+if(!empty($name)){
+	$stm = $stm . " AND Artist_Maker LIKE :Pname";
+	$subArray[":Pname"] = "%" . $artest . "%";
 }
+
+if(!empty($keywords)){
+	$stm = $stm . " AND (eMuseum_Label_Text LIKE :keyWord1 OR Period_Dynasty LIKE :keyword2 OR Description LIKE :keyword3 OR Materials_Techniques LIKE :keyword4 OR Object_Name LIKE :keyword5 OR Title LIKE :keyword6 OR Culture LIKE :keyword7)";
+	$subArray[":keyWord1"] = "%" . $keywords . "%";
+	$subArray[":keyWord2"] = "%" . $keywords . "%";
+	$subArray[":keyWord3"] = "%" . $keywords . "%";
+	$subArray[":keyWord4"] = "%" . $keywords . "%";
+	$subArray[":keyWord5"] = "%" . $keywords . "%";
+	$subArray[":keyWord6"] = "%" . $keywords . "%";
+	$subArray[":keyWord7"] = "%" . $keywords . "%";
+}
+
+
+
+
 
 if(empty($ALLDepartment)){
 	$stm = $stm . " AND (1=0";
