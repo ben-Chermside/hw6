@@ -139,9 +139,13 @@ $subArray = array();
 
 if(!empty($numResults)){
 	if(ctype_digit($numResults)){
-		$stm = $stm . " LIMIT ?";
-		$subArray[":charLim"] = $numResults;
-		$stmt->bind_param("i", $numResults);
+		if((int)$numResults<100){
+		    $stm = $stm . " LIMIT $numResults";
+		}
+		else{
+			$stm = $stm . " LIMIT 100";			
+		}
+		//$subArray[":charLim"] = $numResults;
 	}
 }
 
