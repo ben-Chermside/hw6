@@ -136,6 +136,11 @@ $subArray = array();
 
 
 
+if(!empty($artest)){
+	$stm = $stm . " AND Artist_Maker=:artest";
+	$subArray[":artest"] = $artest;
+}
+
 
 if(!empty($numResults)){
 	if(ctype_digit($numResults)){
@@ -145,7 +150,6 @@ if(!empty($numResults)){
 		else{
 			$stm = $stm . " LIMIT 100";			
 		}
-		//$subArray[":charLim"] = $numResults;
 	}
 }
 
