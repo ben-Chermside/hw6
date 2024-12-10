@@ -137,7 +137,15 @@ $stm = $stm . ";";
 $stmPre = $conn->prepare($stm);
 print("stat is <P>$stm<P");
 $stmPre->execute($subArray);
- $body = "<table><tr><th>ID</th><th>Name</th><th>salary</th><th>department</th></tr>";
+ //$body = "<table><tr><th>ID</th><th>Name</th><th>salary</th><th>department</th></tr>";
+ $body = "<table><tr><th>ID</th>";
+ for($addTitle=0; $addTitle<count($infoGetsCheckboxes); $addTitle = $addTitle + 1){
+	$currAdd = $getCorrospondingName[$addTitle];
+	$body = $body . "<th>$currAdd</th>";
+ }
+ $body = $body . "</tr>";
+
+
  foreach($stmPre->fetchAll(PDO::FETCH_ASSOC) as $key =>$val ) {
 	$body = $body . "<tr><td>$key</td>";
 	for($addTo=0; $addTo<count($infoGetsCheckboxes); $addTo = $addTo + 1){
