@@ -144,7 +144,7 @@ if(!empty($numResults)){
 	}
 }
 
-
+print("<P>$subArray</P>");
 
 
 $stm = $stm . ";";
