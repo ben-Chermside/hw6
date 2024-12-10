@@ -139,7 +139,7 @@ print("stat is <P>$stm<P");
 $stmPre->execute($subArray);
  $body = "<table><tr><th>ID</th><th>Name</th><th>salary</th><th>department</th></tr>";
  foreach($stmPre->fetchAll(PDO::FETCH_ASSOC) as $key =>$val ) {
-	//$body = $body . "<tr><td>$key</td>";
+	$body = $body . "<tr><td>$key</td>";
 	for($addTo=0; $addTo<count($infoGetsCheckboxes); $addTo = $addTo + 1){
 		if($infoGetsCheckboxes[$addTo] == "on"){
 			//print("<P>entered loop</P>");
