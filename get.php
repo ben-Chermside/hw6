@@ -139,8 +139,10 @@ print("stat is <P>$stm<P");
 $stmPre->execute($subArray);
 $body = "<table><tr><th>ID</th>";
 for($addTitle=0; $addTitle<count($infoGetsCheckboxes); $addTitle = $addTitle + 1){
-    $currAdd = $getCorrospondingName[$addTitle];
-    $body = $body . "<th>$currAdd</th>";
+	if($infoGetsCheckboxes[$addTitle] == "on"){
+		$currAdd = $getCorrospondingName[$addTitle];
+		$body = $body . "<th>$currAdd</th>";
+	}
 }
 $body = $body . "</tr>";
 
