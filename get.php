@@ -141,8 +141,10 @@ $stmPre->execute($subArray);
  foreach($stmPre->fetchAll(PDO::FETCH_ASSOC) as $key =>$val ) {
 	$body .= "<tr><td>$key</td>";
 	for($addTo=0; $addTo<count($infoGetsCheckboxes); $addTo = $addTo + 1){
-		$toInsert = $val[$getCorrospondingName[$addTo]];
-		$body .= "<tr>$toInsert</tr>";
+		if(isset($infoGetsCheckboxes[$addTo])){
+			$toInsert = $val[$getCorrospondingName[$addTo]];
+			$body .= "<tr>$toInsert</tr>";
+		}
 	}
 	$body .= "</td>\n";
 
