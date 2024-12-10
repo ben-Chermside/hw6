@@ -37,6 +37,7 @@ $getCorrospondingName = array("ObjectID","Accession_Number","Classification","Ac
 
 print("line 2");
 
+$numResults = $_POST["numResults"];
 $Asian = $_POST["Asian"];
 $European = $_POST["European"];
 $American = $_POST["American"];
@@ -131,6 +132,19 @@ else{
 }
 
 $subArray = array();
+
+
+
+
+
+if(!empty($numResults)){
+	if(ctype_digit($numResults)){
+		$stm = $stm . " LIMIT :charLim";
+		$subArray[":charlim"] = $numResults;
+	}
+}
+
+
 
 
 $stm = $stm . ";";
