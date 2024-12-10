@@ -137,8 +137,8 @@ $subArray = array();
 
 
 if(!empty($artest)){
-	$stm = $stm . " AND Artist_Maker=:artest";
-	$subArray[":artest"] = $artest;
+	$stm = $stm . " AND Artist_Maker LIKE :artest";
+	$subArray[":artest"] = "%" . $artest . "%";
 }
 
 
