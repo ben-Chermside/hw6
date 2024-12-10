@@ -144,12 +144,12 @@ if(!empty($numResults)){
 	}
 }
 
-print("<P>$subArray</P>");
+//print("<P>$subArray</P>");
 
 
 $stm = $stm . ";";
 $stmPre = $conn->prepare($stm);
-print("stat is <P>$stm<P");
+print("stat is <P>$stm</P>");
 $stmPre->execute($subArray);
 $body = "<table><tr><th>ID</th>";
 for($addTitle=0; $addTitle<count($infoGetsCheckboxes); $addTitle = $addTitle + 1){
