@@ -7,10 +7,10 @@ $user           = "bchermsi";
 $pw             = "50177BenC";
 
 
-ini_set('display_errors', '1');
-ini_set('display_startup_errors', '1');
-error_reporting(E_ALL ^ E_WARNING);
-print("started");
+// ini_set('display_errors', '1');
+// ini_set('display_startup_errors', '1');
+// error_reporting(E_ALL ^ E_WARNING);
+// print("started");
 
 
 $ID = $_POST["ID"];
@@ -35,7 +35,7 @@ $artMedium = $_POST["artMedium"];
 $infoGetsCheckboxes = array($IDget, $Accessionget, $TypeGet,  $Acquisitionget, $Artistget, $Titleget, $Object_Namegetget, $Techniquesget, $Dimensionsget, $Descriptionget, $Cultureget, $Dynastyget, $textget, $Description);
 $getCorrospondingName = array("ObjectID","Accession_Number","Classification","Acquisition_Method","Artist_Maker","Title","Object_Name","Materials_Techniques","Dimensions","Description","Culture","Period_Dynasty","Department","eMuseum_Label_Text");
 
-print("line 2");
+//print("line 2");
 
 $numResults = $_POST["numResults"];
 $Asian = $_POST["Asian"];
@@ -68,7 +68,7 @@ $otherAquisition = $_POST["otherAquisition"];
 $allAquisition = $_POST["allAquisition"];
 
 
-print("print 3");
+//print("print 3");
 
 // $csci = $_POST["csci"];
 // $finance = $_POST["finance"];
@@ -241,8 +241,8 @@ if(!empty($numResults)){
 
 $stm = $stm . ";";
 $stmPre = $conn->prepare($stm);
-print("stat is <P>$stm</P>");
-print_r($subArray);
+// print("stat is <P>$stm</P>");
+// print_r($subArray);
 $stmPre->execute($subArray);
 $body = "<table><tr><th>ID</th>";
 for($addTitle=0; $addTitle<count($infoGetsCheckboxes); $addTitle = $addTitle + 1){
