@@ -154,6 +154,7 @@ if(!empty($name)){
 if(!empty($keywords)){
 	$keyWordList = explode(",", $keywords);
 	for($keyWordNum = 0; $keyWordNum<sizeof($keyWordList); $keyWordNum++){
+		$keywords = $keyWordList[$keyWordNum];
 		$stm = $stm . " AND (eMuseum_Label_Text LIKE :keyWord1$keyWordNum OR Period_Dynasty LIKE :keyword2$keyWordNum OR Description LIKE :keyword3$keyWordNum OR Materials_Techniques LIKE :keyword4$keyWordNum OR Object_Name LIKE :keyword5$keyWordNum OR Title LIKE :keyword6$keyWordNum OR Culture LIKE :keyword7$keyWordNum)";
 		$subArray[":keyWord1$keyWordNum"] = "%" . $keywords . "%";
 		$subArray[":keyWord2$keyWordNum"] = "%" . $keywords . "%";
