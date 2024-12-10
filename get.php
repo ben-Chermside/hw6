@@ -87,7 +87,7 @@ function PrintPage($body, $year) {
   print("<html>\n<head>\n<title>This is the movie handler!</title>\n");
   print("</head>\n<body>\n");
 
-  print("<h1>art matching your Querry $year</h1>\n");
+  print("<h1>art matching your Querry</h1>\n");
 
   print("<div class='formOutput'>$body\n</div>\n");
 
@@ -139,14 +139,14 @@ print("stat is <P>$stm<P");
 $stmPre->execute($subArray);
  $body = "<table><tr><th>ID</th><th>Name</th><th>salary</th><th>department</th></tr>";
  foreach($stmPre->fetchAll(PDO::FETCH_ASSOC) as $key =>$val ) {
-	$body .= "<tr><td>$key</td>";
+	//$body = $body . "<tr><td>$key</td>";
 	for($addTo=0; $addTo<count($infoGetsCheckboxes); $addTo = $addTo + 1){
-		if(isset($infoGetsCheckboxes[$addTo])){
-			print("entered loop");
-			$toInsert = $val[$getCorrospondingName[$addTo]];
-			//prev($toInsert);
-			$body .= "<tr>$toInsert</tr>";
-		}
+		// if(isset($infoGetsCheckboxes[$addTo])){
+		// 	print("entered loop");
+		// 	$toInsert = $val[$getCorrospondingName[$addTo]];
+		// 	//prev($toInsert);
+		// 	$body = $body . "<tr>$toInsert</tr>";
+		// }
 	}
 	$body .= "</td>\n";
 
@@ -155,7 +155,7 @@ $stmPre->execute($subArray);
     //                $val['Title'] .
     //                //"</td><td>" . $val['salary'] . "</td><td>" . $val["dept_name"] .
 	// 			   "</td></td>\n";
- }
+}
 printPage($body, 1);
 
 
