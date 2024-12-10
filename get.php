@@ -144,7 +144,6 @@ $stmPre->execute($subArray);
 		if($infoGetsCheckboxes[$addTo] == "on"){
 			$toInsert = $val[$getCorrospondingName[$addTo]];
 			//prev($toInsert);
-			//print("<P>$toInsert</P>");
 			$body = $body . "<tr>$toInsert</tr>";
 		}
 	}
