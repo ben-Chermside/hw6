@@ -152,14 +152,17 @@ if(!empty($name)){
 }
 
 if(!empty($keywords)){
-	$stm = $stm . " AND (eMuseum_Label_Text LIKE :keyWord1 OR Period_Dynasty LIKE :keyword2 OR Description LIKE :keyword3 OR Materials_Techniques LIKE :keyword4 OR Object_Name LIKE :keyword5 OR Title LIKE :keyword6 OR Culture LIKE :keyword7)";
-	$subArray[":keyWord1"] = "%" . $keywords . "%";
-	$subArray[":keyWord2"] = "%" . $keywords . "%";
-	$subArray[":keyWord3"] = "%" . $keywords . "%";
-	$subArray[":keyWord4"] = "%" . $keywords . "%";
-	$subArray[":keyWord5"] = "%" . $keywords . "%";
-	$subArray[":keyWord6"] = "%" . $keywords . "%";
-	$subArray[":keyWord7"] = "%" . $keywords . "%";
+	$keyWordList = explode(",", $keywords);
+	for($keyWordNum = 0; $keyWordNum<sizeof($keyWordList); $keyWordNum++){
+		$stm = $stm . " AND (eMuseum_Label_Text LIKE :keyWord1$keyWordNum OR Period_Dynasty LIKE :keyword2$keyWordNum OR Description LIKE :keyword3$keyWordNum OR Materials_Techniques LIKE :keyword4$keyWordNum OR Object_Name LIKE :keyword5$keyWordNum OR Title LIKE :keyword6$keyWordNum OR Culture LIKE :keyword7$keyWordNum)";
+		$subArray[":keyWord1$keyWordNum"] = "%" . $keywords . "%";
+		$subArray[":keyWord2$keyWordNum"] = "%" . $keywords . "%";
+		$subArray[":keyWord3$keyWordNum"] = "%" . $keywords . "%";
+		$subArray[":keyWord4$keyWordNum"] = "%" . $keywords . "%";
+		$subArray[":keyWord5$keyWordNum"] = "%" . $keywords . "%";
+		$subArray[":keyWord6$keyWordNum"] = "%" . $keywords . "%";
+		$subArray[":keyWord7$keyWordNum"] = "%" . $keywords . "%";	
+	}
 }
 
 
