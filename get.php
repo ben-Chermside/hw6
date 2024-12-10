@@ -140,7 +140,7 @@ $subArray = array();
 if(!empty($numResults)){
 	if(ctype_digit($numResults)){
 		$stm = $stm . " LIMIT :charLim";
-		$subArray[":charlim"] = $numResults;
+		$subArray[":charLim"] = $numResults;
 	}
 }
 
