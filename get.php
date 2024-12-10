@@ -141,6 +141,20 @@ if(!empty($artest)){
 	$subArray[":artest"] = "%" . $artest . "%";
 }
 
+if(!empty($ID)){
+	$stm = $stm . " AND ObjectID=:ID";
+	$subArray[":ID"] =  $ID;
+}
+
+if(!empty($artest)){
+	$stm = $stm . " AND Artist_Maker LIKE :artest";
+	$subArray[":artest"] = "%" . $artest . "%";
+}
+
+
+
+
+
 
 if(!empty($numResults)){
 	if(ctype_digit($numResults)){
