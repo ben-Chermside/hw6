@@ -171,7 +171,7 @@ if(empty($ALLDepartment)){
 	if(!empty($Modern)){
 		$stm = $stm . " OR Department='Modern and Contemporary Art'";
 	}
-	$stm = $stm . ")"
+	$stm = $stm . ")";
 
 }
 
